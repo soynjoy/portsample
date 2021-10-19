@@ -1,0 +1,33 @@
+  .star {
+    z-index: 50;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 1px;
+    height: 1px;
+    box-shadow: 0 0 0 5px rgba(white, .02),
+                0 0 0 10px rgba(white, .05);
+    border-radius: 50%;
+    background-color: white;
+    animation: shooting 5s linear infinite;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      right: 1px;
+      top: 0;
+      background: linear-gradient(to right, rgba(black, 0) 0%,rgba(white, .4) 100%);    
+    }
+  }
+  
+  .star-2 { top: 100px; left: -100px; animation: shooting 8s 1s linear infinite }
+  .star-3 { top: 250px; left: -250px; animation: shooting 3s 2s linear infinite }
+  .star-4 { top: 50px; left: -50px;  animation: shooting 3s 2s linear infinite }
+  .star-5 { top: 150px; left: -150px; animation: shooting 3s 2s linear infinite }
+  
+  @keyframes shooting {
+    0% { transform: translate(-100px, -100px) rotate(45deg) scale(1) }
+    100%   { transform: translate(calc(100% + 300px), calc(100% + 300px)) rotate(45deg) scale(1.5) }
+  }

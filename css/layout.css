@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+  }
+  
+html, body {
+    background-color: #00014A;
+    background-image: url(../src/images/bg.png);
+    background-size: cover; /* 이미지로 꽉 채우기 */
+}

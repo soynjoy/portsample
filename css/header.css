@@ -1,0 +1,27 @@
+.main__headline{
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 4vw;
+    font-family: 'ghanachoco';
+    color: white;
+}
+
+header{
+    /* 요소 겹칠 경우 우선순위 지정 */
+    z-index: 99;
+}
+
+.nav-bar{
+    height: 5vw;
+    text-align: right;
+    padding-top: 3vw;
+    margin-right: 100px;
+}
+
+.nav-item{
+    /* 요소는 인라인 해당 요소 내부에서는 블록처럼 */
+    display: inline-block;
+    font-size: 1vw;
+    margin: 0 10px;
+    color: white;
+}

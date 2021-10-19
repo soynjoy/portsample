@@ -1,0 +1,9 @@
+/*
+여러 개의 스타일시트 파일을 모아주는 장소!
+*/
+@import "./header.css";
+@import "./layout.css";
+@import "./font.css";
+@import "./parallax.css";
+@import "./section.css";
+@import "./portfolio.css";
